@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css" src="Formulaire.css"></style>
+	<script type="text/javascript" src="Formulaire.js"></script>
+</head>
+<body>
+	<center>
+		<div style="width:500px;background: gray;">
+			<h1>Saisie d'une fiche "Personne"</h1>
+			<form id="formAW" onsubmit="validation()">
+			  <label for="fname">Nom:</label><br>
+			  <input type="text" id="nom" name="nom" value=""><br>
+			  <label for="lname">Prénom:</label><br>
+			  <input type="text" id="prenom" name="prenom" value="" =""><br><br>
+			  <label for="fname">Date de naissance:</label><br>
+			  <input type="text" id="naissance" name="naissance" placeholder="JJ/MM/AAAA""><br><br>
+			  <label for="fname">Adresse:</label><br>
+			  <input type="text" id="adresse" name="adresse" placeholder="ex:Paris"><br>
+			  <label for="fname">Mail:</label><br>
+			  <input type="text" id="mail" name="mail" placeholder="aaa@gg.com"><br>
+			  <p>
+			  <input type="button" value="Valider" onclick="validation()"/>
+			  </p>
+			</form>
+			<div id="error" style="background-color: Pink;padding:5px;border: 1px;border-color:Black; display:none; ">
+				<p>Le Nom doit contenir en moins 5 caractères</p>
+			</div>
+			<div id="resultat" style="background-color: Green;padding:5px;border: 1px;border-color:White; display:none; ">
+			</div>
+		</div>
+
+		
+	</center>
+</body>
+</html>
