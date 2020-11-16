@@ -1,33 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="utf-8">
+	
+<!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<!-- CSS boostrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+<script src="js/popper.min.js"></script>
+
+<!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/form-jquery-validation.js"></script>
+
+</head>
+
+
+<body>
+	<center>
+	<h1>TP AW Formulaire-v2</h1>
+	
+	</center>
+<div class="container"
+  
+<center>
+<div style="width:500px;background: light;">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputNom">Nom</label>
+    <input type="Nom" class="form-control" id="exampleInputNom" aria-describedby="nomHelp" placeholder="SETTE">
+    <div class="form-group">
+    <label for="exampleInputPrenom">Prenom</label>
+    <input type="Prenom" class="form-control" id="exampleInputPrenom" aria-describedby="prenomHelp" placeholder="Houda">
+    <div class="form-group">
+    <label for="exampleInputDatedenaissance">Date de naissance</label>
+    <input type="Date de naissance" class="form-control" id="exampleInputDatedenaissance" aria-describedby="datedenaissanceHelp" placeholder="JJ/MM/AA">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputAdresse">Adresse</label>
+    <input type="Adresse" class="form-control" id="exampleInputAdresse" placeholder="Adresse">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputMail">Mail</label>
+    <input type="Adresse" class="form-control" id="exampleInputMail" placeholder="Mail">
+  </div>
+  <button type="button" onclick="showModal()" class="btn btn-primary">Valider</button>
+
+</form>
+</div>
+</div>
+</div>
+</center>
+	
+	<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="modal-content" class="modal-body">
+        <p>Corps de la modal à modifier après validation du formulaire</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>		
+			
+			
+
+		
+	
+</body>
 </html>
